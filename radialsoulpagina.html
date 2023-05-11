@@ -1,73 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+  <style>
+    /* Estilos generales para reducir el tamaño de los elementos */
+    body {
+      font-size: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos específicos para los elementos */
+    h1, h2, h3, p {
+      font-size: 2em; /* Tamaño del texto */
+      margin: 1em 0; /* Espacios entre los elementos */
+    }
+  </style>
+<style>
+  body {
+    margin: 15px; /* Márgenes de 20 píxeles en todos los lados */
+  }
+</style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radial Soul</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="vista.css">
 </head>
 <body>
-    <head><h1>Hablemos del Artista</h1>
-    <nav><a href="http://">Inicio</a>
-        <a href="http://">Sobre Nosotros</a>
-        <a href="http://">Contactanos</a>
-    </nav></head>
-    <P>Sean Bienvenidos a este espacio virtual, donde conoceremos sobre distintos artitas.</P>
-    <h2>Rafael Orozco</h2>
-    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RIOPNTGSMZE43KFNXB6FDR7FCI.jpg" alt="Rafael Orozco" style="width:400px;height:200px;">
-    <h3>¿Quién Era Este Artista?</h3>
-   <main> <ul>
-    <li>Rafael José Orozco Maestre, nacido en Becerril, 24 de marzo de 1954.
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1 style="text-align: center;">HABLEMOS DEL ARTISTA</h1>
 
-    </li>
+    </header>
 
-    <li>En el año 1976, en la ciudad de Barranquilla crea junto a Israel Romero la agrupación musical vallenata llamada El Binomio de Oro.
+    <main>
+        <section>
+            <p>Sean Bienvenidos a este espacio virtual, donde conoceremos sobre distintos artistas.</p>
+            <h2 style="text-align: center;">RAFAEL OROZCO</h2>
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RIOPNTGSMZE43KFNXB6FDR7FCI.jpg" alt="Rafael Orozco" style="width:400px;height:200px;">
+            <h3>¿QUIÉN ERA EL ARTISTA?</h3>
+            <ul>
+                <li>Rafael Orozco fue un reconocido cantante y compositor colombiano, nacido el 24 de marzo de 1954 en la ciudad de Barranquilla y fallecido el 11 de junio de 1992. Es considerado uno de los artistas más destacados del género vallenato, un estilo musical tradicional de la región caribeña de Colombia.
+Orozco comenzó su carrera musical desde muy joven, y se convirtió en un exponente destacado del vallenato romántico. Su voz cálida y emotiva, junto con su habilidad para componer canciones con letras profundas y sentimentales, le ganaron el reconocimiento y el cariño del público. A lo largo de su trayectoria, Rafael Orozco lanzó varios álbumes exitosos, entre los que se destacan "El Binomio de Oro", una agrupación que formó junto al acordeonista Israel Romero, y "Enamorado como Siempre", su primer trabajo como solista. Temas como "Hasta el Final" y "Solo para Ti" se convirtieron en grandes éxitos y se mantienen como clásicos del vallenato.</li>
+            </ul>
+            <h3>¿CUÁLES FUERON SUS LOGROS?</h3>
+            <ol>
+                <li>Se hizo merecedor de tres Congos de Oro en el Festival de Orquestas del Carnaval de Barranquilla.</li>
+                <li>Logró ganar 6 discos de oro y dos de platino por ventas millonarias, distinciones y galardones en Venezuela.</li>
+            </ol>
+            <h3>¿CUÁLES FUERON SUS TEMAS MÁS SONADOS?</h3>
+            <ul>
+                <li>Solo para ti</li>
+                <li>La creciente</li>
+            </ul>
+        </section>
+        <div class="cuadro">
+          <h3>DATOS CURIOSOS</h3>
+          <p>Contenido del cuadro 1</p>
+        </div>
+        
+        <div class="cuadro">
+          <h3>¿NO LO SABIAS?</h3>
+          <p>Contenido del cuadro 2</p>
+        </div>
+        
 
-    </li>
-</ul>
+      </section>
+      <section>
+        <h3 style="text-align: center;">ESCUCHA SUS TEMAS MAS MEMORABLES</h3>
+        <div class="container">
+            <div class="video-column">
+                <iframe width="260" height="215" src="https://www.youtube.com/embed/JevkTZze5L8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-column">
+                <iframe width="260" height="215" src="https://www.youtube.com/embed/_ptHsR0cGPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-column">
+                <iframe width="260" height="215" src="https://www.youtube.com/embed/iQgUhpU45jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+      <h3 style="text-align: center;">DESEAS CONTACTARNO</h3>
+        <div class="formulario">
+            <h2>Formulario de contacto</h2>
+            <form>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+               
+                <div class="campo">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" required></textarea>
+              </div>
+              <div class="campo">
+                  <input type="submit" value="Enviar">
+              </div>
+          </form>
+      </div>
+    <section>
+        <h3>REDES SOCIALES</h3>
+        <div class="botones-container">
+            <button class="boton-rojo">Whatsapp</button>
+            <button class="boton-verde">Facebook</button>
+            <button class="boton-azul">TikTok</button>
+        </div>
+    </section>
 </main>
-   
-    <h3>¿Cuales fueron sus logros?</h3>
-    <ol>
-        <li>Se hizo merecedor de tres Congos de Oro en el Festival de Orquestas del Carnaval de Barranquilla.
 
-        </li> <li>Logro ganar 6 discos de oro y dos de platino por ventas millonarias, distinciones y galardones en Venezuela.
-        </li>
-    </ol>
-    <h3>¿Cuales fueron sus temas musicales mas sonados?</h3>
-    <ul>
-        <li>Solo para ti
-
-        </li>
-    
-        <li>La creciente
-
-        </li>
-    </ul>
-</body>
-<h3>¿Quieres contactarnos?</h3>
-<form >
-    <label for="name">Nombre y Apellido:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Correo Electronico:</label>
-    <input type="email" id="email" name="email" required>
+<div style="margin-top: 10px; margin-bottom: 20px;"></div>
 
 
-    
-
-  
-
-    <input type="submit" value="Submit">
-</form>
-
-<h3>Escucha uno de sus temas mas memorables</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ptHsR0cGPM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-
-<footer>
-    <p>&copy; 2023 RadialSoul</p>
+<footer class="footer">
+  <p>&copy; <style="text-align: center;">2023RadialSoul</p>
 </footer>
+
+</footer>
+</body>
 </html>
