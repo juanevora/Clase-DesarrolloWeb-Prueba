@@ -1,133 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <style>
-    /* Estilos generales para reducir el tamaño de los elementos */
-    body {
-      font-size: 15px;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Estilos específicos para los elementos */
-    h1, h2, h3, p {
-      font-size: 2em; /* Tamaño del texto */
-      margin: 1em 0; /* Espacios entre los elementos */
-    }
-  </style>
-<style>
-  body {
-    margin: 15px; /* Márgenes de 20 píxeles en todos los lados */
-  }
-</style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radial Soul</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="vista.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadialSoul</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilocuadro.css">
+  <link rel="icon" type="image/png" href="LOGO FAVICO.ico">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-        <h1 style="text-align: center;">HABLEMOS DEL ARTISTA</h1>
+  
+  <header>
+    
+    <nav>
+      <img src="LOGO RADIO NEW.png" alt="Logo" class="logo">
+    <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#acerca-de">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </header>
-
-    <main>
-        <section>
-            <p>Sean Bienvenidos a este espacio virtual, donde conoceremos sobre distintos artistas.</p>
-            <h2 style="text-align: center;">RAFAEL OROZCO</h2>
-            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/RIOPNTGSMZE43KFNXB6FDR7FCI.jpg" alt="Rafael Orozco" style="width:400px;height:200px;">
-            <h3>¿QUIÉN ERA EL ARTISTA?</h3>
-            <ul>
-                <li>Rafael Orozco fue un reconocido cantante y compositor colombiano, nacido el 24 de marzo de 1954 en la ciudad de Barranquilla y fallecido el 11 de junio de 1992. Es considerado uno de los artistas más destacados del género vallenato, un estilo musical tradicional de la región caribeña de Colombia.
-Orozco comenzó su carrera musical desde muy joven, y se convirtió en un exponente destacado del vallenato romántico. Su voz cálida y emotiva, junto con su habilidad para componer canciones con letras profundas y sentimentales, le ganaron el reconocimiento y el cariño del público. A lo largo de su trayectoria, Rafael Orozco lanzó varios álbumes exitosos, entre los que se destacan "El Binomio de Oro", una agrupación que formó junto al acordeonista Israel Romero, y "Enamorado como Siempre", su primer trabajo como solista. Temas como "Hasta el Final" y "Solo para Ti" se convirtieron en grandes éxitos y se mantienen como clásicos del vallenato.</li>
-            </ul>
-            <h3>¿CUÁLES FUERON SUS LOGROS?</h3>
-            <ol>
-                <li>Se hizo merecedor de tres Congos de Oro en el Festival de Orquestas del Carnaval de Barranquilla.</li>
-                <li>Logró ganar 6 discos de oro y dos de platino por ventas millonarias, distinciones y galardones en Venezuela.</li>
-            </ol>
-            <h3>¿CUÁLES FUERON SUS TEMAS MÁS SONADOS?</h3>
-            <ul>
-                <li>Solo para ti</li>
-                <li>La creciente</li>
-            </ul>
-        </section>
-        <div class="cuadro">
-          <h3>DATOS CURIOSOS</h3>
-          <p>Contenido del cuadro 1</p>
-        </div>
-        
-        <div class="cuadro">
-          <h3>¿NO LO SABIAS?</h3>
-          <p>Contenido del cuadro 2</p>
-        </div>
-        
-
-      </section>
-      <section>
-        <h3 style="text-align: center;">ESCUCHA SUS TEMAS MAS MEMORABLES</h3>
-        <div class="container">
-            <div class="video-column">
-                <iframe width="260" height="215" src="https://www.youtube.com/embed/JevkTZze5L8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-column">
-                <iframe width="260" height="215" src="https://www.youtube.com/embed/_ptHsR0cGPM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="video-column">
-                <iframe width="260" height="215" src="https://www.youtube.com/embed/iQgUhpU45jE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-    <section>
-      <h3 style="text-align: center;">DESEAS CONTACTARNO</h3>
-        <div class="formulario">
-            <h2>Formulario de contacto</h2>
-            <form>
-                <div class="campo">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                <div class="campo">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-               
-                <div class="campo">
-                  <label for="mensaje">Mensaje:</label>
-                  <textarea id="mensaje" name="mensaje" required></textarea>
-              </div>
-              <div class="campo">
-                  <input type="submit" value="Enviar">
-              </div>
-          </form>
+  <div class="separator"></div>
+  
+  <main>
+    <h1>Hablemos De Vallenato</h1> 
+    <h3>Los Diablitos Del Vallenato</h3>
+    <div class="artist-info">
+      <div class="info">
+        <p style="color: white; font-size: 30px;">
+          Los Diablitos fue un icónico conjunto vallenato de Colombia que se formó en la década de 1980. Estuvo liderado por el talentoso cantante y compositor Omar Geles, quien fue su vocalista principal y uno de los principales impulsores del éxito del grupo.
+        </p>
       </div>
-    <section>
-        <h3>REDES SOCIALES</h3>
-        <div class="botones-container">
-            <button class="boton-rojo">Whatsapp</button>
-            <button class="boton-verde">Facebook</button>
-            <button class="boton-azul">TikTok</button>
+      <div class="image">
+        <img src="VALLENATO.png" alt="Descripción de la imagen" width="350" height="345"style="float: right;">
+      </div>
+    </div>
+    
+    <div class="separator"></div>
+
+    <h5>Galería de imágenes</h5>
+    <div class="gallery">
+      <img src="https://e.snmc.io/i/600/s/235d06adabe4fd938d0983233b0ef4b0/8377450/los-diablitos-sorpresa-caribe-cover-art.jpg" alt="Imagen 1">
+      <img src="https://lastfm.freetls.fastly.net/i/u/ar0/4f71dc064e18dc2e233ac804aa82675c.jpg" alt="Imagen 2">
+      <img src="https://i.discogs.com/isnJpesxwoxKmBJqblJ4rxIBbOGgiMw-gPt1ZiZs19g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNjE3/ODUwLTE2NTAyMjM2/MzEtOTMzNC5qcGVn.jpeg" alt="Imagen 3">
+    </div>
+
+    <div class="separator"></div>
+
+    <h6>La Inspiradora Historia de Los Diablitos de Colombia: Pasión y Éxito en la Música Vallenata</h6>
+    <div class="container">
+    <div class="text">
+      <p>En el vibrante escenario de Valledupar, Colombia, nació una historia de perseverancia y dedicación: Los Diablitos de Colombia. En medio de festividades bulliciosas, Omar Geles se entregaba por completo, animando y acompañando a cantantes espontáneos.</p>
+      <p>Fue en una de estas travesías donde el destino unió a Omar Geles con Miguel Morales, un joven con sueños similares y un espíritu enérgico. Juntos formaron un dúo que, en 1983, fue llevado a la ciudad de Medellín para grabar su música. La magia surgió de inmediato, y su talento y destreza musical los catapultaron hacia el éxito.</p>
+      <p>Con el tiempo, Omar Geles se convirtió en el director indiscutible de Los Diablitos, guiando su trayectoria con pasión y visión.</p>
+      <p>El nombre "Los Diablitos" tiene su origen en el apodo que Omar Geles recibió desde su infancia en su tierra natal. Su energía y carisma contagiosos le valieron el apodo de "Omar 'El Diablito' Geles". A partir de 1986, el nombre se hizo público, aunque inicialmente se concebía como "Omar Geles 'El Diablito' y Miguel Morales".</p>
+      <p>Con una combinación de talento, arduo trabajo y un nombre que encierra una historia personal, Los Diablitos de Colombia dejaron una huella imborrable en la música. Han cautivado a generaciones enteras con su pasión y sus sonidos irresistibles, dejando un legado perdurable en el corazón de sus seguidores.</p>
+    </div>
+    <div class="Image">
+      <img src="vallenato23.png" alt="Imagen" style="width: 250px;">
+    </div>
+  </div>
+
+  <div class="separator"></div>
+
+    <div class="cuadro">
+      <div class="columna">
+        <h2>Nombre del Álbum</h2>
+        <p><b>"A Besitos"</b></p>
+        <p><b>"Los Camino De La Vida"</b></p>
+        <p><b>"No Me Dejes Morir"</b></p>
+        <p><b>"Cuando Casi Te Olvidaba"</b></p>
+        <p><b>La Negra Quiere Más"</b></p>
+        <p><b>"Enamorado de Ti"</b></p>
+        <p><b>"Mi Historia Musical"</p>
+        <!-- Añadir más nombres de álbumes si es necesario -->
+      </div>
+      <div class="columna">
+        <h2>Fecha de Lanzamiento</h2>
+        <p>1989</p>
+        <p>1990</p>
+        <p>1991</p>
+        <p>1992</p>
+        <p>1993</p>
+        <p>1994</p>
+        <p>1995</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <h6>ESCUCHA SUS TEMAS MAS SONADOS</h6>
+    <div class="container-videos">
+      <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OuQ7Att6ZTg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mg5KZgpxrm0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pE0Zn_N5p2E" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4_pNbiT62fU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div class="separator"></div>
+
+    <div class="container-formulario">
+      <h1>Contactanos</h1>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
         </div>
-    </section>
-</main>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
 
-<div style="margin-top: 10px; margin-bottom: 20px;"></div>
-
-
-<footer class="footer">
-  <p>&copy; <style="text-align: center;">2023RadialSoul</p>
-</footer>
-
-</footer>
+<h4>Siguenos en Nuestras Redes Sociales</h4>
+  <div class="social-buttons">
+    <a href="https://www.facebook.com/radialsoul" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook">
+    </a>
+    <a href="https://www.youtube.com/radialsoul" target="_blank">
+      <img src="https://static.vecteezy.com/system/resources/previews/016/716/475/original/youtube-icon-free-png.png" alt="YouTube">
+    </a>
+    <a href="https://www.tiktok.com/@radial_soul" target="_blank">
+      <img src="https://assets.stickpng.com/images/5cb78671a7c7755bf004c14b.png" alt="TikTok">
+    </a>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 RadialSoul</p>
+  </footer>
+  
 </body>
+
 </html>

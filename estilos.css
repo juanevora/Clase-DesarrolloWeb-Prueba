@@ -1,181 +1,295 @@
 /* Estilos generales */
+ <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+     overflow: auto;
+      
+    }
+    h1 {
+      font-size: 40px;
+      color: #f9f9f9;
+    }
+    h3 {
+      font-size: 28px;
+      color: #f9f9f9;
+    }
+    h4 {
+      font-size: 28px;
+      font-style: italic;
+      color: #f9f9f9;
+      text-align: center;
+    }
+    header {
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
 
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    .artist-info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .artist-info .info {
+      width: 70%;
+      font-size: 18px;
+      text-align: justify;
+    }
+
+    .artist-info .image {
+      width: 30%;
+      margin-left: 20px;
+    }
+
+    footer {
+      background-color: #f9f9f9;
+      padding: 10px;
+      text-align: center;
+    }
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px; 
-  text-align: justify;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #05ac9e, #9005d1);
+ /* Fondo que hace contraste con los colores del logo */
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Estilos del menú de navegación */
-
-nav {
-  background-color: #00000093;
-  color: #ca2c2c;
+/* Estilos del encabezado */
+header {
+  background-color: #fcf6f600;
+  color: #ffffff00;
   padding: 10px;
-  text-align: center;
-  font-size: 20px;
-  text-decoration-color: #ff0000;
+  
 }
 
-nav ul {
-  list-style: none;
+header h1 {
+  font-size: 80px;
   margin: 0;
-  padding: 0;
 }
 
-nav ul li {
+header .logo {
+  width: 350px;
+  height: 100px;
+  background-image: url(""); /* Ruta de la imagen del logo */
+  background-size: rgba(245, 242, 242, 0.171);
   display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
 }
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-/* Estilos de los encabezados */
-
-h1, h2, h3 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Estilos de las imágenes */
-
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-/* Estilos de los párrafos */
-
-p {
-  text-align: justify;
-  margin-top: 18px;
-}
-
-/* Estilos de las listas */
-
-.cuadro {
-  background-color: #f2f2f298;
-  border: 1px solid #ccc;
-  border-radius: 5%;
-  padding: 20px;
-  margin-bottom: 20px;
-  max-width: 900px; /* Ajusta el tamaño máximo del cuadro */
-  margin-left: auto; /* Centra horizontalmente */
-  margin-right: auto; /* Centra horizontalmente */
-  text-align: center;
-}
-
-.cuadro h3 {
-  margin-top: 0;
-}
-
-.cuadro p {
-  margin-bottom: 0;
-}
-
 
 /* Estilos del formulario de contacto */
 
-.formulario {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #eee9e98c;
-  border-radius: 5px;
-  margin-top: 20px;
+.container-formulario {
+  max-width: 850px;
+  margin: auto;
+  padding: 15px;
+  background-color: #0000004d;
+  border-radius: 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  color: #f9f9f9;
 }
 
-.campo {
-  margin-bottom: 10px;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-label {
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form label {
   display: block;
-  margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+form input,
+form textarea {
   width: 100%;
-  padding: 5px;
+  padding: 1px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: px;
 }
 
-input[type="submit"] {
-  background-color: #333;
+form textarea {
+  resize: vertical;
+  color: #f9f9f9;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
   color: #fff;
-  padding: 5px 10px;
   border: none;
+  border-radius: 1px;
   cursor: pointer;
 }
 
-/* Estilos de los videos */
-
-.video-column {
-  width: 260px;
-  margin-right: 10px;
+form button[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-/* Estilos de los botones de redes sociales */
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .container-vista {
+    max-width: 300px;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+}
 
-.botones-container {
+/* Estilos de la galería de imágenes */
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  height: auto;
+}
+
+/* Estilos de la sección de información del artista */
+.artist-info {
+  display: flex;
+  align-items: center;
+}
+
+.artist-info .info {
+  flex: 1;
+}
+
+.artist-info .image {
+  flex: 1;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.artist-info img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #3333331f;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.social-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
-.boton-rojo,
-.boton-verde,
-.boton-azul {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 16px;
+.social-buttons a {
+  margin: 0 10px;
 }
 
-.boton-rojo {
-  background-color: #E53935;
-}
-
-.boton-verde {
-  background-color: #43A047;
-}
-
-.boton-azul {
-  background-color: #1E88E5;
+.social-buttons img {
+  width: 80px;
+  height: 80px;
 }
 
 
-/* Estilos del pie de página */
-
-.footer {
-  text-align: center;
-  background-color: #33333379;
-  color: #fff;
-  padding: 10px;
+/* Estilo del menú de navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  text-align: center;
+  background-color: #0000005d;
+  
+
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
 }
 
+nav {
+  max-width: 3000px;
+  background-color: #ffffff00;
+  text-align: center;
+}
 
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
 
+.menu li {
+  margin-left: 10px;
+  text-align: center;
+}
 
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fffdfd;
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.menu li a:hover {
+  color: #000000;
+}
