@@ -143,18 +143,6 @@ form button[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Media queries */
-@media screen and (max-width: 600px) {
-  .container-vista {
-    max-width: 300px;
-  }
-  
-  form input,
-  form textarea {
-    font-size: 14px;
-  }
-}
-
 /* Estilos de la galería de imágenes */
 .gallery {
   display: flex;
@@ -240,5 +228,11 @@ nav {
 
 .menu li a:hover {
   color: #000000;
+  display: flex;
 }
 
+/* Importar otros archivos CSS */
+@import url(/CSS/menudenavegacion.css);
+@import url(/CSS/vista.css);
+@import url(/CSS/piedepagina.css);
+@import url(/CSS/estilocuadro.css);
